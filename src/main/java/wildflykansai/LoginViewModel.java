@@ -5,8 +5,8 @@ import java.io.Serializable;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 
-@RequestScoped // ここを外すと javax.el.PropertyNotFoundException
 @Model
+@RequestScoped
 public class LoginViewModel implements Serializable {
   private static final long serialVersionUID = 1L;
   @Inject Logic service;
